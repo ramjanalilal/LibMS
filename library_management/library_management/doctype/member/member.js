@@ -162,3 +162,4 @@ function generateOTP() {
     }
     return otp;
 }
+

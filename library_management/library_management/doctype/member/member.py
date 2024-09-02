@@ -21,29 +21,6 @@ class Member(Document):
             frappe.msgprint("Customer created successfully")
             customer_doc.insert()
 
-# @frappe.whitelist()
-# def status_update_from_table(member):
-#     memberships = frappe.get_all('Membership Details',
-#                                    filters={'parent': member},
-#                                    fields=['*'])
-
-#     for mm in memberships:
-#         if mm.membership_status == "Active":
-#             frappe.msgprint(f"Status : {mm.membership_status}")
-        
-# @frappe.whitelist()
-# def status_update_from_table(member):
-#     memberships = frappe.get_all('Membership Details',
-#                                  filters={'parent': member},
-#                                  fields=['membership_status'])
-
-#     if memberships and all(mm['membership_status'] == "Expired" for mm in memberships):
-#         # Update the parent Member's status to "Expired"
-#         frappe.db.set_value('Member', member, 'membership_status', 'Expired')
-#         frappe.msgprint(f"Member {member} status updated to Expired")
-#     else:
-#         frappe.msgprint(f"Member {member} has active memberships")
-
 @frappe.whitelist()
 def update_all_members_status():
     # Fetch all members
