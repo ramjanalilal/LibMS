@@ -55,7 +55,7 @@ frappe.ui.form.on('Book Reservation', {
             });
         }
     },
-    before_submit: function(frm) {
+    before_save: function(frm) {
         let has_available_book = false;
 
         // Check if any book has the status 'Available'
@@ -70,5 +70,10 @@ frappe.ui.form.on('Book Reservation', {
             frappe.msgprint(__('You cannot submit this reservation because one or more books are available.'));
             frappe.validated = false; // Prevent submission
         }
+    },
+    after_save: function(frm) {
+        // Set the field 'status' to read-only after saving
+        frm.set_df_property('book', 'read_only', 1);
+        frm.refresh_field('book');  // Refresh the field to apply the change
     }
 });

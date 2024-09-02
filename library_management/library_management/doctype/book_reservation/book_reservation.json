@@ -11,6 +11,7 @@
   "member_name",
   "issued_book",
   "amended_from",
+  "status",
   "book_information_column",
   "book",
   "book_title",
@@ -18,7 +19,6 @@
   "language",
   "reservation_information_section",
   "reservation_date",
-  "hold_days",
   "reservation_remarks",
   "column_break_jitn",
   "book_reservation_details"
@@ -60,11 +60,6 @@
    "fieldname": "reservation_date",
    "fieldtype": "Date",
    "label": "Reservation Date"
-  },
-  {
-   "fieldname": "hold_days",
-   "fieldtype": "Int",
-   "label": "Hold Days"
   },
   {
    "fieldname": "reservation_remarks",
@@ -119,20 +114,30 @@
    "fieldname": "book_reservation_details",
    "fieldtype": "Table",
    "label": "Book Reservation Details",
-   "options": "Book Reservation Details"
+   "options": "Book Reservation Details",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Status",
+   "options": "Requested\nActive\nInactive",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2024-08-30 20:14:39.949862",
+ "modified": "2024-08-31 12:49:56.552517",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book Reservation",
  "owner": "Administrator",
  "permissions": [
   {
-   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -142,7 +147,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
