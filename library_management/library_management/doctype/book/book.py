@@ -29,7 +29,8 @@ class Book(WebsiteGenerator):
                 'is_fixed_asset': 1,
                 'auto_create_assets': 1,
                 'asset_naming_series': asset_naming,
-                'asset_category': category
+                'asset_category': category,
+                'is_sales_item': 0
             })
             item_doc.insert()
             self.item_name = item_doc.name

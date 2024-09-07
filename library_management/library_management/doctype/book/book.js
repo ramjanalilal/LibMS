@@ -135,7 +135,7 @@ function createBookCategory(frm, category) {
                 frappe.msgprint(__('Book Category exists'));
             }
 
-            // Check if Asset Category exists
+     //       Check if Asset Category exists
     frappe.db.exists('Asset Category', category)
                 .then(assetExists => {
                     if (!assetExists) {
