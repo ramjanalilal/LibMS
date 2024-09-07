@@ -8,16 +8,15 @@
  "engine": "InnoDB",
  "field_order": [
   "connection_tab",
-  "member_information_tab",
+  "member_information_section",
   "naming_series",
   "salutation",
   "first_name",
-  "member_name",
   "middle_name",
   "last_name",
+  "member_name",
   "status_check",
   "column_break_s66x",
-  "member_type",
   "birth_date",
   "membership_expiry_date",
   "gender",
@@ -28,17 +27,20 @@
   "membership_details",
   "dashboard_tab",
   "address_contact_tab",
-  "member_address",
+  "section_break_sfez",
   "address_html",
-  "display_address",
-  "contact_html",
-  "column_break_bbcfs",
   "image",
+  "column_break_bbcfs",
+  "contact_html",
   "mobile",
   "verify",
   "otp",
+  "email_id",
   "other_information_section",
-  "member_documents"
+  "member_documents",
+  "customer_section",
+  "customer",
+  "customer_name"
  ],
  "fields": [
   {
@@ -98,31 +100,9 @@
    "reqd": 1
   },
   {
-   "fieldname": "member_information_tab",
-   "fieldtype": "Tab Break",
-   "label": "Member Information"
-  },
-  {
    "fieldname": "address_contact_tab",
    "fieldtype": "Tab Break",
    "label": "Address & Contact"
-  },
-  {
-   "depends_on": "eval: !doc.__islocal",
-   "fieldname": "address_html",
-   "fieldtype": "HTML",
-   "label": "Address HTML"
-  },
-  {
-   "fieldname": "member_address",
-   "fieldtype": "Link",
-   "label": "Member Address",
-   "options": "Address"
-  },
-  {
-   "fieldname": "display_address",
-   "fieldtype": "Read Only",
-   "label": "Display Address"
   },
   {
    "fieldname": "column_break_bbcfs",
@@ -166,6 +146,7 @@
    "show_dashboard": 1
   },
   {
+   "collapsible": 1,
    "fieldname": "membership_details_section",
    "fieldtype": "Section Break",
    "label": "Membership Details"
@@ -181,13 +162,6 @@
    "fieldtype": "Select",
    "label": "Notify By",
    "options": "None\nBoth\nSMS\nEmail"
-  },
-  {
-   "fetch_from": "member_address.phone",
-   "fieldname": "mobile",
-   "fieldtype": "Data",
-   "label": "Mobile Number",
-   "options": "Phone"
   },
   {
    "fieldname": "verify",
@@ -216,28 +190,67 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "member_type",
-   "fieldtype": "Link",
-   "label": "Member Type",
-   "options": "Member Type",
-   "reqd": 1
-  },
-  {
    "fieldname": "status_check",
    "fieldtype": "Button",
    "label": "status_check"
   },
   {
+   "fieldname": "member_information_section",
+   "fieldtype": "Section Break",
+   "label": "Member Information"
+  },
+  {
+   "fieldname": "section_break_sfez",
+   "fieldtype": "Section Break",
+   "options": "fa fa-map-marker"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML"
+  },
+  {
    "fieldname": "contact_html",
    "fieldtype": "HTML",
    "label": "Contact HTML"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "options": "Email"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "customer_section",
+   "fieldtype": "Section Break",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fetch_from": "member_address.phone",
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "options": "Phone"
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "is_calendar_and_gantt": 1,
  "links": [],
- "modified": "2024-09-02 07:18:45.277400",
+ "modified": "2024-09-04 10:18:51.373303",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Member",
