@@ -98,6 +98,7 @@
    "fieldname": "member",
    "fieldtype": "Link",
    "label": "Member",
+   "mandatory_depends_on": "eval:doc.transaction_type == \"Issue\" || doc.transaction_type == \"Renew\"",
    "options": "Member",
    "search_index": 1
   },
@@ -128,7 +129,7 @@
    "link_fieldname": "transaction_no"
   }
  ],
- "modified": "2024-08-10 12:41:05.538027",
+ "modified": "2024-09-06 20:05:45.671241",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book Transaction",
