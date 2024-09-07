@@ -43,12 +43,6 @@
   "image",
   "aws_key",
   "upload_file",
-  "donation_details_section",
-  "donated_book",
-  "donor_name",
-  "donor_mobile",
-  "donor_location",
-  "donation_date",
   "section_break_faist",
   "book_images",
   "route",
@@ -160,12 +154,6 @@
    "options": "Book Cover"
   },
   {
-   "fieldname": "donated_book",
-   "fieldtype": "Select",
-   "label": "Donated Book",
-   "options": "No\nYes"
-  },
-  {
    "fieldname": "volume",
    "fieldtype": "Data",
    "label": "Volume"
@@ -228,41 +216,11 @@
    "label": "Published"
   },
   {
-   "depends_on": "eval:doc.donated_book == \"Yes\"",
-   "fieldname": "donor_name",
-   "fieldtype": "Data",
-   "label": "Donor name",
-   "mandatory_depends_on": "eval:doc.donated_book == \"Yes\""
-  },
-  {
-   "depends_on": "eval:doc.donated_book == \"Yes\"",
-   "fieldname": "donor_mobile",
-   "fieldtype": "Data",
-   "label": "Donor Mobile"
-  },
-  {
-   "depends_on": "eval:doc.donated_book == \"Yes\"",
-   "fieldname": "donor_location",
-   "fieldtype": "Data",
-   "label": "Donor Location"
-  },
-  {
-   "depends_on": "eval:doc.donated_book == \"Yes\"",
-   "fieldname": "donation_date",
-   "fieldtype": "Date",
-   "label": "Donation Date"
-  },
-  {
    "fieldname": "book_code",
    "fieldtype": "Link",
    "label": "Book Code",
    "options": "DDC",
    "reqd": 1
-  },
-  {
-   "fieldname": "donation_details_section",
-   "fieldtype": "Section Break",
-   "label": "Donation Details"
   },
   {
    "fieldname": "is_digital_book",
@@ -330,7 +288,7 @@
   }
  ],
  "max_attachments": 5,
- "modified": "2024-08-27 13:51:47.877506",
+ "modified": "2024-09-07 11:01:38.553645",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",

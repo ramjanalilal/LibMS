@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"fYC6BqvpLI\",\"type\":\"header\",\"data\":{\"text\":\"<b>Your Shortcuts</b><br>\",\"col\":12}},{\"id\":\"ScjQUni4sG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Member\",\"col\":3}},{\"id\":\"HHwMMj0rIr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Book Asset No\",\"col\":3}},{\"id\":\"8FYLSYlLVM\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"1hAaHh7yTf\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Masters</span>\",\"col\":12}},{\"id\":\"h_UPPe439y\",\"type\":\"card\",\"data\":{\"card_name\":\"Book Master\",\"col\":4}},{\"id\":\"kTwnDL_kDW\",\"type\":\"card\",\"data\":{\"card_name\":\"Author & Editor\",\"col\":4}},{\"id\":\"5cQrsAvmpr\",\"type\":\"card\",\"data\":{\"card_name\":\"Membership\",\"col\":4}},{\"id\":\"KiHo9hc-XS\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa5oEpwQUH\",\"type\":\"card\",\"data\":{\"card_name\":\"Transaction\",\"col\":4}}]",
+ "content": "[{\"id\":\"fYC6BqvpLI\",\"type\":\"header\",\"data\":{\"text\":\"<b>Your Shortcuts</b><br>\",\"col\":12}},{\"id\":\"ScjQUni4sG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Member\",\"col\":3}},{\"id\":\"HHwMMj0rIr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Book Asset No\",\"col\":3}},{\"id\":\"8FYLSYlLVM\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"XeXpxoodRA\",\"type\":\"card\",\"data\":{\"card_name\":\"Book Master\",\"col\":4}},{\"id\":\"kTwnDL_kDW\",\"type\":\"card\",\"data\":{\"card_name\":\"Author & Editor\",\"col\":4}},{\"id\":\"5cQrsAvmpr\",\"type\":\"card\",\"data\":{\"card_name\":\"Membership\",\"col\":4}},{\"id\":\"KiHo9hc-XS\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa5oEpwQUH\",\"type\":\"card\",\"data\":{\"card_name\":\"Transaction\",\"col\":4}},{\"id\":\"FGfkx0RfMB\",\"type\":\"card\",\"data\":{\"card_name\":\"Feedback\",\"col\":4}}]",
  "creation": "2024-01-10 16:21:03.690486",
  "custom_blocks": [],
  "docstatus": 0,
@@ -12,113 +12,6 @@
  "is_hidden": 0,
  "label": "LMS",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Author & Editor",
-   "link_count": 5,
-   "link_type": "",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Author",
-   "link_count": 0,
-   "link_to": "Author",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Editor",
-   "link_count": 0,
-   "link_to": "Editor",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Publication",
-   "link_count": 0,
-   "link_to": "Publication",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Translator",
-   "link_count": 0,
-   "link_to": "Translator",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Language",
-   "link_count": 0,
-   "link_to": "Language",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Membership",
-   "link_count": 4,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Member",
-   "link_count": 0,
-   "link_to": "Member",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Library Service",
-   "link_count": 0,
-   "link_to": "Library Service",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Library Membership",
-   "link_count": 0,
-   "link_to": "Library Membership",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Book Master",
-   "link_count": 5,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -207,9 +100,225 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Membership",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Member",
+   "link_count": 0,
+   "link_to": "Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Service",
+   "link_count": 0,
+   "link_to": "Library Service",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Service Plan",
+   "link_count": 0,
+   "link_to": "Library Service Plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Membership",
+   "link_count": 0,
+   "link_to": "Library Membership",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Feedback",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Feedback",
+   "link_count": 0,
+   "link_to": "Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Feedback Question",
+   "link_count": 0,
+   "link_to": "Feedback Question",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kiosk Feedback",
+   "link_count": 0,
+   "link_to": "Kiosk Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Banner",
+   "link_count": 0,
+   "link_to": "Banner",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Book Master",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Book",
+   "link_count": 0,
+   "link_to": "Book",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Book Cover",
+   "link_count": 0,
+   "link_to": "Book Cover",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Book Condition",
+   "link_count": 0,
+   "link_to": "Book Condition",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Book Category",
+   "link_count": 0,
+   "link_to": "Book Category",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Barcode Generator",
+   "link_count": 0,
+   "link_to": "Barcode Generator",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Author & Editor",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Author",
+   "link_count": 0,
+   "link_to": "Author",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Editor",
+   "link_count": 0,
+   "link_to": "Editor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Publication",
+   "link_count": 0,
+   "link_to": "Publication",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Translator",
+   "link_count": 0,
+   "link_to": "Translator",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Language",
+   "link_count": 0,
+   "link_to": "Language",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-06-12 17:57:45.516062",
+ "modified": "2024-09-07 11:40:52.828498",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "LMS",
