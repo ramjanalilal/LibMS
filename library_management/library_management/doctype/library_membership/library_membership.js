@@ -76,5 +76,27 @@ frappe.ui.form.on('Library Membership Details', {
         var day = child_doc.days;
         var due = frappe.datetime.add_days(child_doc.from_date, day);
         frappe.model.set_value(cdt, cdn, 'due_date', due);
+    },
+    library_membership_details_add: function(frm, cdt, cdn) {
+        calculate_total_amount(frm, amount);
+        //console.log("amount")
+    },
+
+    // Trigger this function when the amount field is changed
+    amount: function(frm, cdt, cdn) {
+        calculate_total_amount(frm);
     }
 });
+
+
+function calculate_total_amount(frm) {
+    let amount = 0;
+
+    // Loop through each row in the child table
+    frm.doc.library_membership_details.forEach(function(row) {
+        amount += row.amount;
+    });
+
+    // Set the total amount in a field in the parent doctype (e.g., total_amount)
+    frm.set_value('amount', amount);
+}
